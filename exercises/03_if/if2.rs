@@ -1,14 +1,19 @@
 // TODO: Fix the compiler error on this function.
+// SOLUTION: Return types must be the same
 fn foo_if_fizz(fizzish: &str) -> &str {
     if fizzish == "fizz" {
         "foo"
-    } else {
-        1
+    } else if fizzish == "fuzz" {
+        "bar"
+    }
+    else {
+        "baz"
     }
 }
 
 fn main() {
     // You can optionally experiment here.
+    println!("Calling foo_if_fizz with fuzz: {}", foo_if_fizz("fuzz"));
 }
 
 // TODO: Read the tests to understand the desired behavior.
