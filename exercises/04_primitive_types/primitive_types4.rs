@@ -10,7 +10,8 @@ mod tests {
 
         // TODO: Get a slice called `nice_slice` out of the array `a` so that the test passes.
         // let nice_slice = ???
-
+        // A slice takes contains the first element here but not the fourth - in notation it would look like [)
+        let nice_slice = &a[1..4];
         assert_eq!([2, 3, 4], nice_slice);
     }
 }
